@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad Distrital de Imperial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo_muni.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="areas.html">SERVICIOS</a></li>
+                    <li><a href="ciudadano.html">CIUDADANO</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Municipalidad Historica</h1>
+            <p>La Municipalidad Distrital de Imperial es el motor del desarrollo y el bienestar de nuestra comunidad. 
+                Situada en el corazón del Valle de Cañete, trabajamos día a día con el compromiso de servir a 
+                nuestros ciudadanos, promoviendo un distrito moderno, inclusivo y sostenible.</p>
+            <a href="https://www.gob.pe/muniimperial" class="hero-btn">Descubre mas aqui</a>
+        </div>
+    </section>
+    <!--course-->
+
+    <section class="course">
+        <h1>Descripción</h1>
+        <p>Somos la institución encargada de liderar la gestión pública en el distrito de Imperial, 
+            ofreciendo servicios de calidad, fomentando la participación ciudadana y ejecutando 
+            proyectos que impulsan el crecimiento económico, social y cultural de nuestra población.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>MISION</h3>
+                <p>Crear un distrito ordenado, próspero y seguro, 
+                    trabajando de la mano con nuestra gente para 
+                    mejorar la calidad de vida de todos los imperiales.</p>
+            </div>
+            <div class="course-col">
+                <h3>VISIÓN</h3>
+                <p>Ser un distrito modelo en desarrollo humano y urbano, 
+                    donde la unión y la colaboración sean los pilares de nuestro progreso.</p>
+            </div>
+            <div class="course-col">
+                <h3>¿QUE OFRECEMOS?</h3>
+                <p>Servicios al Ciudadano<br>
+                    Proyectos de Desarrollo<br>
+                    Participación Ciudadana<br>
+                    Cuidado del Medio Ambiente</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--campus-->
+    <section class="campus">
+        <h1>Nuestras Sedes</h1>
+        <p>Estas son nuestras 3 sedes principales</p>
+
+        <div class="row">
+            
+            <div class="campus-col">
+                <img src="images/policlinico mispireta.JPG">
+                <div class="layer">
+                    <h3>POLICLÍNICO MUNICIPAL "ERNESTO MISPIRETA VALDIVIA"</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/palacio.JPG">
+                <div class="layer">
+                    <h3>PALACIO MUNICIPAL</h3>
+                </div>
+            </div>
+            
+            <div class="campus-col">
+                <img src="images/cebre.jpg">
+                <div class="layer">
+                    <h3>CEBRE</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+   <section class="tittle-mid">
+        <h3>Encuentre lo que busca</h3>
+   </section>
+
+    <!-----llamar---->
+    <section class="cta">
+        <h1>Llamadas<br>a todas partes del mundo</h1>
+        <a href="https://www.gob.pe/institucion/muniimperial/contacto-y-numeros-de-emergencias" class="hero-btn">Contactanos</a>
+    </section>
+
+
+    <!-----Footer---->
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Queremos escucharte y construir juntos un futuro mejor para Imperial. 
+            Te invitamos a formar parte de nuestras actividades, <br> aprovechar nuestros servicios 
+            y ser protagonista del crecimiento de nuestro distrito. <br>
+            Municipalidad Distrital de Imperial: Trabajamos por ti y contigo.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Powered By <i class="fa fa-heart-o"></i>Joshep</p>
+    </section>
+
+
+
+
+    <!-----javascript for togglemenu---->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="MDIchatbot"
+    agent-id="6ea0543d-b53c-4931-9d52-05d7a7b59df5"
+    language-code="es"></df-messenger>
+
+
+
+
+</body>
+</html>

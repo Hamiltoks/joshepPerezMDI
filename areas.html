@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad Distrital de Imperial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_muni.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="areas.html">SERVICIOS</a></li>
+                    <li><a href="ciudadano.html">CIUDADANO</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>SERVICIOS</h1>
+    </section>
+    
+    <!-----Servicios---->
+    <section class="course">
+        <h1>Descripción</h1>
+        <p>En la Municipalidad Distrital de Imperial, ofrecemos una variedad de servicios <br> diseñados para atender las necesidades de nuestros ciudadanos 
+           <br> y promover el bienestar de nuestra comunidad</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>GERENCIA GENERAL</h3>
+                <p>La Gerencia General de la Municipalidad Distrital de Imperial es el órgano de dirección estratégica 
+                    que lidera y supervisa la ejecución de las políticas, planes y programas establecidos por la entidad. 
+                    Es responsable de coordinar el trabajo de las diferentes áreas municipales para garantizar una 
+                    gestión eficiente, transparente y orientada al servicio de la comunidad.</p>
+            </div>
+            <div class="course-col">
+                <h3>CONSEJO MUNICIPAL</h3>
+                <p>El Consejo Municipal de la Municipalidad Distrital de Imperial es el máximo órgano de gobierno 
+                    y decisión política en el distrito. Está compuesto por el alcalde, quien lo preside, y los regidores, 
+                    quienes son elegidos democráticamente por la población para representar sus intereses y necesidades.</p>
+            </div>
+            <div class="course-col">
+                <h3>OFICINA DE GESTIÓN DE RR.HH</h3>
+                <p>La Oficina de Gestión de Recursos Humanos de la Municipalidad Distrital de Imperial es el área encargada de administrar, 
+                    desarrollar y gestionar al personal municipal. Su misión principal es 
+                    garantizar un equipo humano capacitado, motivado y comprometido con los objetivos institucionales 
+                    y el servicio a la ciudadanía.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-----Facilities---->
+    <section class="facilities">
+        <h1>Actividades</h1>
+        <p>Diversas actividades realizadas por la entidad en bienestar de la población</p>
+    
+        <div class="row">
+            
+            <div class="facilities-col">
+                <img src="images/dest1.jpg">
+                <h3>Entrega de mascarillas</h3>
+                <p>En la Municipalidad Distrital de Imperial, estamos comprometidos con la salud y el bienestar de nuestra comunidad. 
+                    Una de nuestras principales actividades sociales es la entrega gratuita de mascarillas a los vecinos del distrito, 
+                    como parte de nuestras acciones preventivas para proteger a la población frente a enfermedades 
+                    y garantizar su seguridad sanitaria.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/dest2.jpg">
+                <h3>Dia del Adulto Mayor</h3>
+                <p>En la Municipalidad Distrital de Imperial, celebramos el Día del Adulto Mayor como un homenaje especial 
+                    a nuestros vecinos mayores, reconociendo su sabiduría, experiencia y valiosa contribución 
+                    al desarrollo de nuestra comunidad.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/dest3.jpg">
+                <h3>Izamiento del pabellon</h3>
+                <p>En la Municipalidad Distrital de Imperial, el izamiento del Pabellón Nacional es una actividad 
+                    cívica y social de gran importancia, que fortalece el espíritu patriótico y la unión de nuestra comunidad. 
+                    Esta ceremonia se realiza con solemnidad y respeto, honrando los valores que nos identifican como peruanos.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-----Footer---->
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Queremos escucharte y construir juntos un futuro mejor para Imperial. 
+            Te invitamos a formar parte de nuestras actividades, <br> aprovechar nuestros servicios 
+            y ser protagonista del crecimiento de nuestro distrito. <br>
+            Municipalidad Distrital de Imperial: Trabajamos por ti y contigo.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Powered By <i class="fa fa-heart-o"></i>Joshep</p>
+    </section>
+
+    
+
+
+
+
+    <!-----javascript for togglemenu---->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

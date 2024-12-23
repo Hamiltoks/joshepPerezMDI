@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad Distrital de Imperial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_muni.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="areas.html">SERVICIOS</a></li>
+                    <li><a href="ciudadano.html">CIUDADANO</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contáctanos</h1>
+    </section>
+    <!-----Contactanos---->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.609659443882!2d-76.355269424922!3d-13.060500137263082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ffbdd37af60a7%3A0xf365557153820042!2sMunicipalidad%20Distrital%20de%20Imperial%2C%20Av.%2028%20de%20julio%20335%2C%20Imperial%2015701!5e0!3m2!1ses!2spe!4v1731894640989!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Jr. 28 de Julio #335</h5>
+                        <p>Imperial, Cañete</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+51 999 999 999</h5>
+                        <p>Imperial, Cañete</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>muniimperial@gmail.com</h5>
+                        <p>Envia tu emaail</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <div>
+                    <h3>SERVICIO DE WHATSAPP</h3><br>
+                    <br>
+                    <br>
+                    <p>Reporta cualquier problema y/o incoveniente las 24 horas del dia</p>
+                </div>
+                <div>
+                    
+                    <a href="https://wa.me/+51917818701"><img src="images/logo_wasp.png"></a>
+                    <br>
+                    
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+   
+
+
+    <!-----Footer---->
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Queremos escucharte y construir juntos un futuro mejor para Imperial. 
+            Te invitamos a formar parte de nuestras actividades, <br> aprovechar nuestros servicios 
+            y ser protagonista del crecimiento de nuestro distrito. <br>
+            Municipalidad Distrital de Imperial: Trabajamos por ti y contigo.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Powered By <i class="fa fa-heart-o"></i>Joshep</p>
+    </section>
+
+
+
+
+    <!-----javascript for togglemenu---->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad Distrital de Imperial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_muni.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="areas.html">SERVICIOS</a></li>
+                    <li><a href="ciudadano.html">CIUDADANO</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>ATENCIÓN AL CIUDADANO</h1>
+    </section>
+    
+    <!-----ciudadano---->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/atencion.jpg">
+                <h2>Atencion las 24 horas</h2>
+                <p>En la Municipalidad Distrital de Imperial, estamos comprometidos con brindar un servicio eficiente 
+                    y oportuno a nuestra comunidad. Por ello, hemos implementado la atención las 24 horas en áreas clave, 
+                    asegurando que los vecinos puedan acceder a ayuda y soluciones en cualquier momento del día.</p>
+                    <br>
+                    <p>¿Qué Brindamos?
+                        Seguridad Ciudadana Permanente: El equipo de serenazgo patrulla las calles día y noche para prevenir actos delictivos, atender emergencias y proteger a los ciudadanos.
+                        Respuesta a Emergencias: Un sistema de atención inmediata para incidentes como desastres naturales, problemas de infraestructura o situaciones críticas que requieran intervención urgente.
+                        Canales de Contacto Abiertos: Líneas telefónicas, redes sociales y otros medios de comunicación activos las 24 horas para reportar problemas o solicitar apoyo.
+                        Asistencia Médica y Social: Coordinación para la atención de emergencias médicas y soporte a vecinos en situaciones vulnerables o críticas.
+                        Operativos de Limpieza y Mantenimiento: Respuesta rápida a problemas de limpieza, desagües o infraestructura urbana fuera del horario regular.</p>
+                        <br>
+                        <p>¿Por Qué es Importante?
+                            Con la atención 24/7, buscamos:
+                            Proveer tranquilidad y confianza a los vecinos.
+                            Garantizar la seguridad y el bienestar en cualquier momento del día.
+                            Actuar con rapidez y eficacia frente a cualquier eventualidad.</p>
+                        <br>
+                        <p>Nuestro compromiso es claro: estar siempre a tu lado, cuidando de nuestro distrito y de cada vecino 
+                            las 24 horas del día, los 7 días de la semana. 
+                            En Imperial, no descansamos para garantizar tu tranquilidad.</p>
+
+                            <div class="comment-box">
+                                <h3>Deje su comentario</h3>
+                                <form class="comment-form" onsubmit="sendEmail(); reset(); return false;">
+                                    <input type="text" id="name" placeholder="Ingrese su nombre">
+                                    <input type="email" id="email" placeholder="Ingrese su correo">
+                                    <textarea rows="5" id="message" placeholder="Su comentario"></textarea>
+                                    <button type="submit" class="hero-btn red-btn">ENVIAR</button>
+                                </form>
+                            </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    
+
+
+
+    <!-----javascript for togglemenu---->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.chosenx.com",
+                Username : "username",
+                Password : "1234",
+                To : 'barovor685@chosenx.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("message succefully")
+            );
+        }
+    </script>
+
+    <!-----Footer---->
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Queremos escucharte y construir juntos un futuro mejor para Imperial. 
+            Te invitamos a formar parte de nuestras actividades, <br> aprovechar nuestros servicios 
+            y ser protagonista del crecimiento de nuestro distrito. <br>
+            Municipalidad Distrital de Imperial: Trabajamos por ti y contigo.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Powered By <i class="fa fa-heart-o"></i>Joshep</p>
+    </section>
+
+
+
+
+
+</body>
+</html>
